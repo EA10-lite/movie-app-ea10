@@ -1,0 +1,39 @@
+.navbar {
+    width:100%;
+    padding:10px 0;
+}
+.container {
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    display: flex;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+}
+.logo  a p  {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+.navbar .logo svg {
+    background-color: lightseagreen !important;
+    padding:5px;
+    border-radius: 50%;
+}
+.navbar .nav ul {
+    display: flex;
+}
+.navbar .nav ul li {
+    margin:0 10px;
+}
+.navbar .nav ul a {
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.tv-shows h2 {
+    text-align: center;
+}
+
+.search form {
+    width:80%;
+    margin:30px auto;
+}
+.search-area {
+    display: flex;
+    align-items: center;
+    border:1px solid lightgray;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.search-area input {
+    width:100%;
+    outline:none;
+    background-color: transparent;
+    color:white;
+    border:none;
+    margin:0 5px;
+    padding:3px 6px;
+}
+.search-area button {
+    background-color: transparent;
+    border:none;
+}
+
+.search-area button svg {
+    color: rgb(255, 23, 23);
+}

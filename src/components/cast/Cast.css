@@ -1,0 +1,51 @@
+.cast-body h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cast-card {
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    
+    transition: transform 450ms;
+    overflow: wrap;
+    object-fit: contain;
+    padding:10px 0;
+}
+.cast-card:hover {
+    transform:scale(1.08) ;
+    opacity: 1;
+}
+.cast-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:10px auto;
+}
+.cast-card .name, .cast-card .character{
+    font-size: 10px;
+    font-weight: 400;
+}
+.cast-card img {
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.cast-body .btn  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.less {
+    display: none;
+}
+.more, .less {
+    background-color: transparent;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    color: white;
+    padding:4px 12px;
+}

@@ -1,0 +1,113 @@
+.details {
+    background-size: cover;
+    background-attachment: none;
+    width:100%;
+}
+.details-content {
+    width:100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.details-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    margin:auto;
+    width:80%;
+}
+.content-wrapper {
+    margin-left: 10px;
+}
+.cast-wrapper {
+    margin-top: 20px;
+}
+.cast-wrapper h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.cast-wrapper > .cast-content {
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.cast-wrapper > .cast-content::-webkit-scrollbar {
+    display:none;
+}
+.cast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 10px;
+    text-decoration: none;
+    color:lightgray;
+    transition: transform 450ms;
+    object-fit: contain;
+    padding:10px 0;
+}
+.cast:hover {
+    transform:scale(1.08) ;
+    opacity: 1;
+}
+.cast img {
+    height:150px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.details-title h2 {
+    font-size: 48px;
+}
+.details-desc p {
+    font-size: 12px;
+    font-weight: 600;
+}
+.poster-pic img  {
+    height:300px;
+    border-radius: 10px;
+}
+.cast p {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+@media screen and (min-width:768px){
+    .details-content-wrapper {
+        width:70%;
+        margin:0 auto;
+    }
+    
+}
+.btn button {
+    background-color: transparent;
+    border:2px solid white;
+    border-radius: 30px;
+    padding:5px 20px;
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px){
+    .details-content-wrapper {
+        width:80%;
+    }
+    .img-wrapper {
+        display: none;
+    }
+    .content-wrapper {
+        width:80%;
+        margin:auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .details-content-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+    .content-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+}
