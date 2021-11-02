@@ -17,7 +17,7 @@
     margin: auto;
 }
 .content .title h2{
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom:10px;
     line-height: 1;
@@ -71,13 +71,13 @@
     .content-container {
         width:60%;
     }
-    .content .title h2 {
-        font-size: 60px;
-    }
 }
 @media  screen and (max-width: 768px) {
     .header, .header .content {
         height:100vh;
+    }
+    .content .title h2 {
+        font-size: 30px;
     }
 }
 
@@ -87,6 +87,7 @@
     }
     .header .content{
         height: 100vh;
+        background-color: rgba(0,0,0,0.7);
     }
     .description {
         margin-bottom: 20px;

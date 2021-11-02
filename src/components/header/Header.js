@@ -5,6 +5,10 @@ import './Header.css';
 import WatchModal from '../watch/WatchModal';
 import { ArrowRightAlt } from '@material-ui/icons';
 
+const truncate = (sentence)=> {
+    return sentence.length >= 200 ? sentence.slice(0,200)+'...' : sentence;
+}
+
 const Header = ({url})=> {
     const { data } = useFetch(url);
     const [ open , setOpen] = useState(false);
@@ -14,18 +18,18 @@ const Header = ({url})=> {
     return (
         <>
         {data && (
-            <div className="header" style={{backgroundImage:`url(https://image.tmdb.org/t/p/w1280${data.results[4].backdrop_path})`}}>
+            <div className="header" style={{backgroundImage:`url(https://image.tmdb.org/t/p/w1280${data.results[18].backdrop_path})`}}>
                 <div className="content">
                     <div className="content-container">
                         <div className="description">
                             <div className="title">
-                                <h2>{data.results[4].title? data.results[4].title : data.results[4].name }</h2>
+                                <h2>{data.results[18].title? data.results[18].title : data.results[18].name }</h2>
                             </div>
                             <div className="text">
-                                <p>{data.results[4].overview}</p>
+                                <p>{truncate(data.results[18].overview)}</p>
                             </div>
                             <div className="btn">
-                                <Link to={`/movie-details/${data.results[4].id}`} className="view"> 
+                                <Link to={`/movie-details/${data.results[18].id}`} className="view"> 
                                     <span>View Movie </span>
                                     <ArrowRightAlt />
                                 </Link>
@@ -33,13 +37,13 @@ const Header = ({url})=> {
                             </div>
                         </div>
                         <div className="img">
-                            <img src={`https://image.tmdb.org/t/p/original${data.results[4].poster_path}`} alt='' />
+                            <img src={`https://image.tmdb.org/t/p/original${data.results[18].poster_path}`} alt='' />
                         </div>
                     </div>
                 </div>
             </div>
         )}
-        {open && <WatchModal closeModal={handleOpen} id={data.results[4].id} type='movie' />}
+        {open && <WatchModal closeModal={handleOpen} id={data.results[18].id} type='movie' />}
         </>
     )
 }

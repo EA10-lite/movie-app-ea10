@@ -1,12 +1,15 @@
+.cast-body {
+    margin-bottom: 20px;
+}
 .cast-body h2{
-    margin-bottom: 10px;
     margin-left: 10%;
 }
 .cast-card {
-    margin:5px;
+    margin: 5px;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    
+    width:100px;
     transition: transform 450ms;
     object-fit: contain;
     padding:10px 0;
@@ -14,14 +17,18 @@
 .cast-card:hover {
     transform:scale(1.08) ;
     opacity: 1;
+
+}
+.cast-card .name:hover, .cast-card .character:hover {
+    white-space: pre-wrap;
+    overflow-x: visible;
 }
 .cast-content {
     display: flex;
-    align-items: center;
     overflow-x:scroll;
     overflow-y:hidden;
     width: 80%;
-    margin:10px auto;
+    margin:5px auto;
 }
 .cast-content::-webkit-scrollbar {
     display:none;
@@ -29,11 +36,14 @@
 .cast-card .name, .cast-card .character{
     font-size: 12px;
     font-weight: 600;
+    overflow-x:hidden;
+    white-space: nowrap;
 }
 .cast-card img {
     height: 150px;
     width: 100px;
     border-radius: 10px;
+    margin-bottom: 4px;
 }
 
 .cast-body .btn  {
