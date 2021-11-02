@@ -4,11 +4,10 @@ import './WatchModal.css';
 import YouTube from 'react-youtube';
 import { Cancel } from '@material-ui/icons';
 
-const apiKey = '61e94697e69d736eba1fe20f73879a15'
+const apiKey = process.env.REACT_APP_MOVIE_API_KEY;
 
 const WatchModal = ({closeModal, id,type})=> {
     const { data } = useFetch(`https://api.themoviedb.org/3/${type}/${id}/videos?api_key=${apiKey}`);
-    console.log(data)
     const opts = {
         height:"300",
         width:"100%",

@@ -4,16 +4,14 @@ import { Search } from '@material-ui/icons';
 import Results from '../results/Results';
 import MovieOptions from '../movie-opt/MovieOptions';
 
-const apiKey = '61e94697e69d736eba1fe20f73879a15'
+const apiKey = process.env.REACT_APP_MOVIE_API_KEY;
 
 function Movie() {
     const [ query, setQuery ] = useState('')
     const [url, setUrl] = useState(null)
     const handleSubmit = (e)=> {
-        console.log(query)
         e.preventDefault();
         setUrl(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&page=1&append_to_response=videos&query=${query}`);
-        console.log(url)
     }
     const handleChange = (e)=> {
         setQuery(e.target.value)

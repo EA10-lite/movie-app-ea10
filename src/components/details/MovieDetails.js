@@ -6,7 +6,7 @@ import SimilarMovies from '../similar-movie/SimilarMovies';
 import './MovieDetails.css';
 import WatchModal from '../watch/WatchModal';
 
-const apiKey = '61e94697e69d736eba1fe20f73879a15';
+const apiKey = process.env.REACT_APP_MOVIE_API_KEY;
 
 const MovieDetails = ()=> {
     const [ open, setOpen ] = useState(false)

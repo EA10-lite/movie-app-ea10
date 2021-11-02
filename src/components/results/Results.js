@@ -7,7 +7,7 @@ const Results = ({url})=>{
     const { data } = useFetch(url)
     return (
         <div className="results">
-            <div className="result-wrapper">
+            <div className="results-wrapper">
                 {data ?  data.results.map(result=> (
                     <Link to={result.title ? `/movie-details/${result.id}` : `/tvshow-details/${result.id}`} className="result-wrapper" key={result.id}>
                         <img src={`https://image.tmdb.org/t/p/original${result.poster_path}`} alt='' />

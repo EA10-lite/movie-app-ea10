@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '../header/Header';
 import MovieOptions from '../movie-opt/MovieOptions';
 import './Home.css';
-const apiKey = '61e94697e69d736eba1fe20f73879a15'
+const apiKey = process.env.REACT_APP_MOVIE_API_KEY;
+
 
 const Home =()=> {
     // const options = ['trending/all/day','movie/top_rated','movie/popular','movie/now_playing'];

@@ -8,7 +8,6 @@ import Movie from './components/movie/Movie';
 import TvShows from './components/tvshows/TvShows';
 import TvShowDetails from './components/details/TvShowDetails';
 
-console.log(process.env.REACT_APP_MOVIE_API_KEY)
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
             <MovieDetails />
           </Route>
         </Switch>
-
       </BrowserRouter>
     </div>
   );

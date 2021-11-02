@@ -2,21 +2,26 @@
     width:80%;
     margin:auto;
 }
-.result-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+.results-wrapper {
+    display:flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
-.results a {
+.results-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.results-wrapper a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:lightgray;
+    margin:0 4px;
     text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-    margin:8px 5px;
+    color:lightgray;
     transition: transform 450ms;
     object-fit: contain;
+    padding:10px 0;
+    font-size: 12px;
+    font-weight: 400;
 }
 .results a:hover {
     transform:scale(1.08) ;

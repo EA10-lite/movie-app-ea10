@@ -4,7 +4,7 @@ import './TvShows.css';
 import Results from '../results/Results';
 import MovieOptions from '../movie-opt/MovieOptions';
 
-const apiKey = '61e94697e69d736eba1fe20f73879a15';
+const apiKey = process.env.REACT_APP_MOVIE_API_KEY;
 
 const TvShows = ()=> {
     const [ query, setQuery ] = useState('')
