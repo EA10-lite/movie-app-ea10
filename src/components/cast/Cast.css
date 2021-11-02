@@ -1,6 +1,6 @@
 .cast-body h2{
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10%;
 }
 .cast-card {
     margin:5px;
@@ -8,7 +8,6 @@
     flex-direction: column;
     
     transition: transform 450ms;
-    overflow: wrap;
     object-fit: contain;
     padding:10px 0;
 }
@@ -18,15 +17,18 @@
 }
 .cast-content {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
     width: 80%;
     margin:10px auto;
 }
+.cast-content::-webkit-scrollbar {
+    display:none;
+}
 .cast-card .name, .cast-card .character{
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
 }
 .cast-card img {
     height: 150px;
@@ -37,7 +39,7 @@
 .cast-body .btn  {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 10%;
 }
 .less {
     display: none;
