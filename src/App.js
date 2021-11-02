@@ -6,7 +6,9 @@ import Home from './components/homepage/Home';
 import Navbar from './components/navbar/Navbar';
 import Movie from './components/movie/Movie';
 import TvShows from './components/tvshows/TvShows';
-import TvShowDetails from './components/details/TvShowDetails'
+import TvShowDetails from './components/details/TvShowDetails';
+
+console.log(process.env.REACT_APP_MOVIE_API_KEY)
 
 function App() {
   return (
